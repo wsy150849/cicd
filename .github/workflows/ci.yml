@@ -39,7 +39,7 @@ jobs:
           host: "159.75.35.139"
           username: "root"
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
+          port: 33
           source: "dist/*"
           target: "/www/wwwroot/aaa.com"
           overwrite: true
