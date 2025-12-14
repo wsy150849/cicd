@@ -6,6 +6,6 @@
     "start": "node index.js",
     "lint": "echo skip lint",
     "test": "node -e \"process.exit(0)\"",
-    "build": "echo build"
+    "build": "node -e \"const fs=require('fs');const path=require('path');fs.mkdirSync('dist',{recursive:true});fs.copyFileSync('index.js',path.join('dist,'+'index.js'))\""
   }
 }
